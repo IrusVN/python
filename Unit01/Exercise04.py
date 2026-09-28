@@ -1,6 +1,6 @@
 tokens = ["cat", "dog", "bird"]
 
-def create_vocab(tokens):
+def create_vocab(tokens: list[str]) -> dict[str, int]:
     token_to_id = {
         token: index
         for index, token in enumerate(tokens)

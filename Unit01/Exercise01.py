@@ -1,5 +1,8 @@
 def tensor_size(shape: list[int]) -> int:
-    return 1 if not shape else shape[0] * tensor_size(shape[1:])
+    result = 1
+    for dim in shape:
+        result *= dim
+    return result
 
 tensor_size([2, 3])       # 6
 tensor_size([2, 3, 4])    # 24
