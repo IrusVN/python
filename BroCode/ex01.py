@@ -7,7 +7,7 @@
 
 name_file = input("Enter name file (only .jpg or .png): ")
 
-if (name_file.endswith(".jpg") or name_file.endswith(".png")):
+if (name_file.lower().endswith((".jpg", ".png"))):
     size_file = float(input("Enter size file(MB): "))
     if size_file <= 10 and size_file > 0:
         print(f"File {name_file} is valid")

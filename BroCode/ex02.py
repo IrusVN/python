@@ -7,9 +7,9 @@
 #   * Nếu `total_pixels &gt;= 921,600` (tương đương HD 1280x720): In ra `"Ảnh chất lượng trung bình (HD)"`.
 #   * Còn lại: In ra `"Ảnh chất lượng thấp (Cần lọc bỏ)"`.
 
-width = float(input("Enter width: "))
+width = int(input("Enter width: "))
 if width > 0:
-    height = float(input("Enter height: "))
+    height = int(input("Enter height: "))
     if height > 0:
         total_pixels = width * height
         if total_pixels >= 2_073_600:
